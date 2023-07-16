@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>String Interpolation</h1>
+  <div class="name">{{ name }}</div>
+  <div class="birthyear">birthYear: {{ birthYear }}</div>
+</div>
+<br/>
+<div class="container">
+  <h1>Property Binding</h1>
+  <button [disabled]="isDisabled">property Binding</button>
+</div>
+<br/>
+<div class="container">
+  <h1>Event Binding</h1>
+  <div class="message">{{ message }}</div>
+  <button (click)="changeImoji($event)">Event Binding</button>
+</div>
+<br/>
+<div class="container">
+  <h1>Mutual Data Binding</h1>
+  <input type="text" [(ngModel)]="email">
+  <h1>{{ email }}</h1>
+</div>
