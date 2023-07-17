@@ -1,0 +1,22 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+            <br/>
+            <ul>
+                <li *ngFor="let item of obj | keyvalue; let i = index">index: {{ i }} key:  {{ item.key }} value: {{ item.value }}</li>
+            </ul>              
+		</div>
+		<div class="col-md-4">
+            <br/>
+            <ul>
+                <li *ngFor="let item of arr">{{ item }}</li>
+            </ul>              
+		</div>
+		<div class="col-md-4">
+            <br/>
+            <ul>
+                <li *ngFor="let item of arr; let i = index">index: {{ i }} value: {{ item }}</li>
+            </ul>              
+		</div>
+	</div>
+</div>
