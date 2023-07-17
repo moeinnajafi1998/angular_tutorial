@@ -1,0 +1,19 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+            <br/>
+            <button (click)="changeIsEnabled($event)" class="btn btn-primary">change isEnabled</button>
+		</div>
+		<div class="col-md-4">
+			<h2>If-Else</h2>
+            <p *ngIf="isEnabled"> this is shown if isEnabled = <b>true</b></p>
+            <p *ngIf="!isEnabled"> this is shown if isEnabled = <b>false</b></p>
+
+		</div>
+		<div class="col-md-4">
+            <h2>using ng-template element</h2>
+            <p *ngIf="isEnabled; else elseCondition"> this is shown if isEnabled = <b>true</b></p>
+            <ng-template #elseCondition>this is shown if isEnabled = <b>false</b></ng-template>
+		</div>
+	</div>
+</div>
