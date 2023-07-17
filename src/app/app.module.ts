@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
 import { IfElseComponent } from './components/if-else/if-else.component';
+import { ForLoopComponent } from './components/for-loop/for-loop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
-    IfElseComponent
+    IfElseComponent,
+    ForLoopComponent
   ],
   imports: [
     BrowserModule,
